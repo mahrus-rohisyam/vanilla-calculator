@@ -1,58 +1,62 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    font-family: "Work Sans", sans-serif;
-    font-weight: normal;
+	box-sizing: border-box;
+	font-family: "Work Sans", sans-serif;
+	font-weight: normal;
 }
 
 :root {
-    /* Variable CSS */
-    --primary: #0096c7;
-    --primary-dark: #023e8a;
-    --primary-light: #48cae4;
+	/* Variable CSS */
+	--primary: #0096c7;
+	--primary-dark: #023e8a;
+	--primary-light: #48cae4;
+}
+
+h1 {
+  text-align: center;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--primary-light);
-    font-size: 18px;
+	margin: 0;
+	padding: 0;
+	background-color: var(--primary-light);
+	font-size: 18px;
 }
 
 .calculator-grid {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calculator-grid>button {
-    cursor: pointer;
-    background-color: var(--primary-dark);
-    color: white;
-    border: solid 1px white;
+.calculator-grid > button {
+	cursor: pointer;
+	background-color: var(--primary-dark);
+	color: white;
+	border: solid 1px white;
 }
 
-.calculator-grid>button:hover {
-    background-color: var(--primary);
+.calculator-grid > button:hover {
+	background-color: var(--primary);
 }
 
 .span-two {
-    grid-column: span 2;
+	grid-column: span 2;
 }
 
 .output {
-    grid-column: 1 / -1;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
+	grid-column: 1 / -1;
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
 }
